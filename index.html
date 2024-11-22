@@ -11,7 +11,28 @@
    
     <div class="editor-container">
       <div class="editor">
-        <textarea id="inputJson" placeholder="Paste your JSON here..."></textarea>
+        <textarea id="inputJson" placeholder="Paste your JSON here...">
+            {  "property": {    "value": "example_value",    "list_of_properties": [
+      {
+
+
+        "property_1": "value_1"      },
+      {        "property_2": "value_2"
+},
+      {
+        "property_3": "value_3"      }
+    ],
+    "nested_properties": {
+"nested_property": {
+        "nested_value": "nested_example_value"
+      }
+    },
+
+    "multiple_values_for_property": [
+      "value_1",      "value_2",      "value_3"    ]
+  }
+}
+        </textarea>
       </div>
       <div class="arrows">
         <div class="arrow">&#8594;</div>
