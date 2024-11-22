@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Formatter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+   
+    <div class="editor-container">
+      <div class="editor">
+        <textarea id="inputJson" placeholder="Paste your JSON here..."></textarea>
+      </div>
+      <div class="arrows">
+        <div class="arrow">&#8594;</div>
+        <div class="arrow">&#8592;</div>
+      </div>
+      <div class="editor">
+        <textarea id="outputJson" readonly placeholder="Formatted JSON will appear here..."></textarea>
+      </div>
+    </div>
+    <div class="controls">
+        <button id="formatSpacesBtn" class="active">Spaces</button>
+      <button id="formatTabsBtn">Tabs</button>
+      
+      
+      <input type="number" id="indentSize" placeholder="Number of spaces/tabs" min="1" />
+    </div>
+    <p id="error" class="error"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
