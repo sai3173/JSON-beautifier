@@ -109,13 +109,13 @@ body {
   }
   
   button:hover {
-    background-color: #005a9e;
+    background-color: #07253ba6;
     color: white;
   }
   
   /* Active state */
   button.active {
-    background-color: #007acc; /* Active background color */
+    background-color:  #1B2A4E; /* Active background color */
     color: white;             /* Active text color */
     border-color: #005a9e;    /* Active border color */
   }
