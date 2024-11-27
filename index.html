@@ -8,10 +8,17 @@
 </head>
 <body>
   <div class="container">
-   
+    <div class="text-container">
+    <h1 class="display-4 text-center fw-medium">
+      Online <span class="text-primary">JSON beautifier and formatter</span>
+    </h1>
+    <p class="lead text-center text-gray mb-6 mb-lg-8">
+      Format and beautify your JSON data online with this free tool. Beautify JSON data by adding spaces or tabs and line returns to make it more readable.
+    </p></div>
+    
     <div class="editor-container">
       <div class="editor">
-        <textarea id="inputJson" placeholder="Paste your JSON here...">
+        <textarea contenteditable="true" id="inputJson" placeholder="Paste your JSON here...">
             {  "property": {    "value": "example_value",    "list_of_properties": [
       {
 
@@ -39,7 +46,7 @@
         <div class="arrow">&#8592;</div>
       </div>
       <div class="editor">
-        <textarea id="outputJson" readonly placeholder="Formatted JSON will appear here..."></textarea>
+        <textarea contenteditable="true" id="outputJson" readonly placeholder="Formatted JSON will appear here..."></textarea>
       </div>
     </div>
     <div class="controls">

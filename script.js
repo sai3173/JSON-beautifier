@@ -59,3 +59,8 @@ indentSizeInput.addEventListener('input', () => {
 });
 
 
+// **New: Update right editor when left editor changes**
+inputJson.addEventListener('input', formatJSON);
+
+// Initialize the output with the current input content
+formatJSON();

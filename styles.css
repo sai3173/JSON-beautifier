@@ -26,6 +26,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     margin-bottom: 20px;
   }
   
@@ -37,7 +38,7 @@ body {
   
   textarea {
     width: 95%;
-    height: 350px;
+    height: 400px;
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -74,7 +75,86 @@ body {
     align-items: center;
     color: #d4d4d4;
   }
+  /* Reset some basic styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the heading and apply the styles */
+h1 {
+  font-size: 2.5rem; /* Medium-large font size */
+  font-weight: 500; /* Medium font weight */
+  text-align: center; /* Center text */
+  margin-top: 50px; /* Space at the top */
+}
+/* Base styling for paragraph */
+p {
+  font-size: 1.25rem; /* Set a default font size */
+  line-height: 1.6; /* Spacing between lines */
+  color: #4b4b4b; /* Gray text color */
+  text-align: center; /* Center align the text */
+  margin-bottom: 1.5rem; /* Margin below the paragraph */
+}
+
+/* Styling for large screens */
+@media (min-width: 992px) {
+  p {
+    font-size: 1.5rem; /* Increase font size for larger screens */
+    margin-bottom: 2rem; /* Increase bottom margin for large screens */
+  }
+}
+
+/* Custom class for gray text */
+.text-gray {
+  color: #8a8787; /* Light gray text */
+}
+
+/* Center text */
+.text-center {
+  text-align: center;
+}
+
+/* Margin below paragraph */
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-lg-8 {
+  margin-bottom: 2rem; /* Margin for large screens (992px or wider) */
+}
+
+
+.text-primary {
+  color: #007bff; /* Blue color for the span */
+}
+
+.fw-medium {
+  font-weight: 500; /* Medium font weight */
+}
+
+.display-4 {
+  font-size: 3rem; /* Adjust the heading size to a larger size */
+}
+
+.text-center {
+  text-align: center;
+}
+.text-container{
+  text-align: center;
+  margin-left: 10%;
+  width: 80%;
   
+ 
+  padding: 0 15px;
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 80%;  /* Equivalent to pt-8 */
+  padding-bottom: 40px; /
+}
+
   .arrow {
     font-size: 24px;
     margin: 5px 0;
@@ -90,21 +170,31 @@ body {
     outline: none;
   }
   
+  
   input[type="number"]:focus {
     border-color: #007acc;
   }
   
   button {
     display: inline-block; 
-    padding: 8px 16px; /* Adjusts the button size */ 
+   
     font-size: 16px;    /* Font size */ 
-     
+    margin-right: 0.5rem;
     text-align: center;
      color: #333;        /* Text color */ 
     border: 1px solid #333; /* Border for the outline */ 
     border-radius: 5px; /* Rounded corners */
      cursor: pointer;
       transition: all 0.3s ease;
+      font-size: 14px; /* Set font size */
+      padding: 10px 20px; /* Set padding (top-bottom, left-right) */
+     
+      border-radius: 5px; /* Set border radius */
+      
+      
+     
+      box-sizing: border-box; /* Ensures padding is included in button's total width/height */
+      height: 40px; 
 
   }
   
