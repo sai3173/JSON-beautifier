@@ -6,6 +6,7 @@ const indentSizeInput = document.getElementById('indentSize');
 const error = document.getElementById('error');
 
 let useSpaces = true; // Default to spaces
+indentSizeInput.value = 2; // Default indent size to 2 spaces
 
 // Function to format JSON dynamically
 function formatJSON() {
@@ -58,9 +59,9 @@ indentSizeInput.addEventListener('input', () => {
   }
 });
 
-
-// **New: Update right editor when left editor changes**
+// Update right editor when left editor changes
 inputJson.addEventListener('input', formatJSON);
 
 // Initialize the output with the current input content
-formatJSON();
+formatSpacesBtn.classList.add('active'); // Set "Spaces" button as active
+formatJSON(); // Initial formatting with spaces and 2 indent size
