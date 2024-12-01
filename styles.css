@@ -66,18 +66,26 @@ body {
         margin-top: 15px; /* Add some spacing between the editor and controls */
         gap: 10px; /* Add spacing between buttons and inputs */
     }
-
-    textarea {
-        width: 60%; /* Full width for text editor */
-        height: auto; /* Let height adjust based on content */
-        min-height: 200px; /* Minimum height for better usability */
-    }
-
+    
+      textarea {
+          height: 400px; /* Increase height for better mobile experience */
+          font-size: 1.2rem; /* Slightly larger font for smaller screens */
+      }
+  
+  
+  
+    
     button,
     input[type="number"] {
         width: 20%; /* Full width for buttons and inputs */
         box-sizing: border-box; /* Include padding and borders in width */
     }
+}
+@media (max-width: 480px) {
+  textarea {
+      height: 500px; /* Further increase height for very small screens */
+      font-size: 1.1rem; /* Adjust font size for readability */
+  }
 }
 
   textarea::-webkit-scrollbar {
@@ -123,9 +131,7 @@ body, html {
 /* Center the heading and apply the styles */
 /* Responsive styles for mobile view */
 @media (max-width: 768px) {
-  .container {
-    
-  }
+ 
 
   textarea {
     height: 200px; /* Adjust height for smaller screens */
